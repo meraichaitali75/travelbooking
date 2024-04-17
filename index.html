@@ -55,117 +55,902 @@
           </ul>
         </div>
       </header>
+      <!-- main -->
       <main class="main-content">
-        <section class="offers-section">
-          <div class="offers-nav-row">
-            <h3>Offers</h3>
-            <ul class="offers-nav">
-              <li>
-                <a href="#" class="nav-link active">all offers</a>
-              </li>
-              <li>
-                <a href="#" class="nav-link">flights</a>
-              </li>
-              <li>
-                <a href="#" class="nav-link">hotels</a>
-              </li>
-              <li>
-                <a href="#" class="nav-link">holidays</a>
-              </li>
-              <li>
-                <a href="#" class="nav-link">trains</a>
-              </li>
-              <li>
-                <a href="#" class="nav-link">cabs</a>
-              </li>
-            </ul>
-            <div class="views-row">
-              <a href="offers.html" class="view-link">VIEW ALL</a>
-              <div class="showall-icons">
-                <a href="#"
-                  ><img
-                    src="assets/images/previous.png"
-                    class="icons"
-                    alt="Previous Offer Icons"
-                /></a>
-                <a href="#"
-                  ><img
-                    src="assets/images/next.png"
-                    class="icons"
-                    alt="Next Offer Icons"
-                /></a>
+        <div class="container">
+          <!-- booking section -->
+          <section class="booking-section">
+            <div class="overlay">
+              <div class="tab_container">
+                <div class="tabs-row">
+                  <label for="tab1">
+                    <span>Flights</span>
+                    <img
+                      src="./assets/images/hotel-holidays.svg"
+                      alt="Hotel Holidays"
+                      class="vehicle-icon"
+                  /></label>
+
+                  <label for="tab2">
+                    <span>Trains</span>
+                    <img
+                      src="./assets/images/train.svg"
+                      alt="Train Icon"
+                      class="vehicle-icon"
+                  /></label>
+
+                  <label for="tab3">
+                    <span>Bus</span>
+                    <img
+                      src="./assets/images/bus.svg"
+                      alt="Bus Icon"
+                      class="vehicle-icon"
+                  /></label>
+
+                  <label for="tab4">
+                    <span>Cabs</span>
+                    <img
+                      src="./assets/images/taxi.svg"
+                      alt="Cabs Icon"
+                      class="vehicle-icon"
+                  /></label>
+                  <label for="tab5">
+                    <span>Holiday Package</span>
+                    <img
+                      src="./assets/images/holiday-island-tourism-.svg"
+                      alt="Bus Icon"
+                      class="vehicle-icon"
+                  /></label>
+                </div>
+
+                <input
+                  id="tab1"
+                  class="booking-radio-input"
+                  type="radio"
+                  name="tabs"
+                  checked
+                />
+                <input
+                  id="tab2"
+                  class="booking-radio-input"
+                  type="radio"
+                  name="tabs"
+                />
+                <input
+                  id="tab3"
+                  class="booking-radio-input"
+                  type="radio"
+                  name="tabs"
+                />
+                <input
+                  id="tab4"
+                  class="booking-radio-input"
+                  type="radio"
+                  name="tabs"
+                />
+                <input
+                  id="tab5"
+                  class="booking-radio-input"
+                  type="radio"
+                  name="tabs"
+                />
+
+                <section id="content1" class="tab-content">
+                  <h3>Flights Booking</h3>
+                  <form action="#" class="booking-frm">
+                    <div class="frm-row">
+                      <div class="frm-grp">
+                        <label for="from">from:</label>
+                        <input
+                          type="date"
+                          id="from"
+                          placeholder="From"
+                          class="form-control"
+                          name="from-date"
+                        />
+                      </div>
+                      <div class="frm-grp">
+                        <label for="to">to:</label>
+                        <input
+                          type="date"
+                          id="to"
+                          placeholder="to"
+                          class="form-control"
+                          name="to-date"
+                        />
+                      </div>
+                      <div class="frm-grp">
+                        <label for="departure">departure:</label>
+                        <input
+                          type="date"
+                          id="departure"
+                          placeholder="to"
+                          class="form-control"
+                          name="departure-date"
+                        />
+                      </div>
+                      <div class="frm-grp">
+                        <label for="return">return:</label>
+                        <input
+                          type="date"
+                          id="return"
+                          placeholder="to"
+                          class="form-control"
+                          name="return-date"
+                        />
+                      </div>
+                    </div>
+                    <div class="frm-row">
+                      <div class="frm-grp">
+                        <label for="adult-member-select">Select ADULTS:</label>
+                        <select
+                          name="adult-member-select"
+                          id="adult-member-select"
+                        >
+                          <option selected value="0">ADULTS</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">4</option>
+                          <option value="4">6</option>
+                          <option value="5">8</option>
+                          <option value="6">10</option>
+                        </select>
+                      </div>
+                      <div class="frm-grp">
+                        <label for="children-member-select"
+                          >select CHILDREN:</label
+                        >
+                        <select
+                          name="children-member-select"
+                          id="children-member-select"
+                        >
+                          <option selected value="0">CHILDREN</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">4</option>
+                          <option value="4">6</option>
+                          <option value="5">8</option>
+                          <option value="6">10</option>
+                        </select>
+                      </div>
+                      <div class="frm-grp">
+                        <label for="room-member-select">select room:</label>
+                        <select
+                          name="room-member-select"
+                          id="room-member-select"
+                        >
+                          <option selected value="0">ROOM</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">4</option>
+                          <option value="4">6</option>
+                          <option value="5">8</option>
+                          <option value="6">10</option>
+                        </select>
+                      </div>
+                      <div class="frm-grp">
+                        <label for="country-member-select"
+                          >select Country:</label
+                        >
+                        <select
+                          name="country-member-select"
+                          id="country-member-select"
+                        >
+                          <option selected value="0">Country</option>
+                          <option value="1">Canada</option>
+                          <option value="2">India</option>
+                        </select>
+                      </div>
+                    </div>
+                  </form>
+                </section>
+
+                <section id="content2" class="tab-content">
+                  <h3>Trains Booking</h3>
+                  <form action="#" class="booking-frm">
+                    <div class="frm-row">
+                      <div class="frm-grp">
+                        <label for="adult-member-select">Select ADULTS:</label>
+                        <select
+                          name="adult-member-select"
+                          id="adult-member-select"
+                        >
+                          <option selected value="0">ADULTS</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">4</option>
+                          <option value="4">6</option>
+                          <option value="5">8</option>
+                          <option value="6">10</option>
+                        </select>
+                      </div>
+                      <div class="frm-grp">
+                        <label for="children-member-select"
+                          >select CHILDREN:</label
+                        >
+                        <select
+                          name="children-member-select"
+                          id="children-member-select"
+                        >
+                          <option selected value="0">CHILDREN</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">4</option>
+                          <option value="4">6</option>
+                          <option value="5">8</option>
+                          <option value="6">10</option>
+                        </select>
+                      </div>
+                      <div class="frm-grp">
+                        <label for="room-member-select">select room:</label>
+                        <select
+                          name="room-member-select"
+                          id="room-member-select"
+                        >
+                          <option selected value="0">ROOM</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">4</option>
+                          <option value="4">6</option>
+                          <option value="5">8</option>
+                          <option value="6">10</option>
+                        </select>
+                      </div>
+                      <div class="frm-grp">
+                        <label for="country-member-select"
+                          >select Country:</label
+                        >
+                        <select
+                          name="country-member-select"
+                          id="country-member-select"
+                        >
+                          <option selected value="0">Country</option>
+                          <option value="1">Canada</option>
+                          <option value="2">India</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="frm-row">
+                      <div class="frm-grp">
+                        <label for="from">from:</label>
+                        <input
+                          type="date"
+                          id="from"
+                          placeholder="From"
+                          class="form-control"
+                          name="from-date"
+                        />
+                      </div>
+                      <div class="frm-grp">
+                        <label for="to">to:</label>
+                        <input
+                          type="date"
+                          id="to"
+                          placeholder="to"
+                          class="form-control"
+                          name="to-date"
+                        />
+                      </div>
+                      <div class="frm-grp">
+                        <label for="departure">departure:</label>
+                        <input
+                          type="date"
+                          id="departure"
+                          placeholder="to"
+                          class="form-control"
+                          name="departure-date"
+                        />
+                      </div>
+                      <div class="frm-grp">
+                        <label for="return">return:</label>
+                        <input
+                          type="date"
+                          id="return"
+                          placeholder="to"
+                          class="form-control"
+                          name="return-date"
+                        />
+                      </div>
+                    </div>
+                  </form>
+                </section>
+
+                <section id="content3" class="tab-content">
+                  <h3>Bus Booking</h3>
+                  <form action="#" class="booking-frm">
+                    <div class="frm-row">
+                      <div class="frm-grp">
+                        <label for="from">from:</label>
+                        <input
+                          type="date"
+                          id="from"
+                          placeholder="From"
+                          class="form-control"
+                          name="from-date"
+                        />
+                      </div>
+                      <div class="frm-grp">
+                        <label for="to">to:</label>
+                        <input
+                          type="date"
+                          id="to"
+                          placeholder="to"
+                          class="form-control"
+                          name="to-date"
+                        />
+                      </div>
+                      <div class="frm-grp">
+                        <label for="departure">departure:</label>
+                        <input
+                          type="date"
+                          id="departure"
+                          placeholder="to"
+                          class="form-control"
+                          name="departure-date"
+                        />
+                      </div>
+                      <div class="frm-grp">
+                        <label for="return">return:</label>
+                        <input
+                          type="date"
+                          id="return"
+                          placeholder="to"
+                          class="form-control"
+                          name="return-date"
+                        />
+                      </div>
+                    </div>
+                    <div class="frm-row">
+                      <div class="frm-grp">
+                        <label for="adult-member-select">Select ADULTS:</label>
+                        <select
+                          name="adult-member-select"
+                          id="adult-member-select"
+                        >
+                          <option selected value="0">ADULTS</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">4</option>
+                          <option value="4">6</option>
+                          <option value="5">8</option>
+                          <option value="6">10</option>
+                        </select>
+                      </div>
+                      <div class="frm-grp">
+                        <label for="children-member-select"
+                          >select CHILDREN:</label
+                        >
+                        <select
+                          name="children-member-select"
+                          id="children-member-select"
+                        >
+                          <option selected value="0">CHILDREN</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">4</option>
+                          <option value="4">6</option>
+                          <option value="5">8</option>
+                          <option value="6">10</option>
+                        </select>
+                      </div>
+                      <div class="frm-grp">
+                        <label for="room-member-select">select room:</label>
+                        <select
+                          name="room-member-select"
+                          id="room-member-select"
+                        >
+                          <option selected value="0">ROOM</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">4</option>
+                          <option value="4">6</option>
+                          <option value="5">8</option>
+                          <option value="6">10</option>
+                        </select>
+                      </div>
+                      <div class="frm-grp">
+                        <label for="country-member-select"
+                          >select Country:</label
+                        >
+                        <select
+                          name="country-member-select"
+                          id="country-member-select"
+                        >
+                          <option selected value="0">Country</option>
+                          <option value="1">Canada</option>
+                          <option value="2">India</option>
+                        </select>
+                      </div>
+                    </div>
+                  </form>
+                </section>
+
+                <section id="content4" class="tab-content">
+                  <h3>Cabs Booking</h3>
+                  <form action="#" class="booking-frm">
+                    <div class="frm-row">
+                      <div class="frm-grp">
+                        <label for="adult-member-select">Select ADULTS:</label>
+                        <select
+                          name="adult-member-select"
+                          id="adult-member-select"
+                        >
+                          <option selected value="0">ADULTS</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">4</option>
+                          <option value="4">6</option>
+                          <option value="5">8</option>
+                          <option value="6">10</option>
+                        </select>
+                      </div>
+                      <div class="frm-grp">
+                        <label for="children-member-select"
+                          >select CHILDREN:</label
+                        >
+                        <select
+                          name="children-member-select"
+                          id="children-member-select"
+                        >
+                          <option selected value="0">CHILDREN</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">4</option>
+                          <option value="4">6</option>
+                          <option value="5">8</option>
+                          <option value="6">10</option>
+                        </select>
+                      </div>
+                      <div class="frm-grp">
+                        <label for="room-member-select">select room:</label>
+                        <select
+                          name="room-member-select"
+                          id="room-member-select"
+                        >
+                          <option selected value="0">ROOM</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">4</option>
+                          <option value="4">6</option>
+                          <option value="5">8</option>
+                          <option value="6">10</option>
+                        </select>
+                      </div>
+                      <div class="frm-grp">
+                        <label for="country-member-select"
+                          >select Country:</label
+                        >
+                        <select
+                          name="country-member-select"
+                          id="country-member-select"
+                        >
+                          <option selected value="0">Country</option>
+                          <option value="1">Canada</option>
+                          <option value="2">India</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="frm-row">
+                      <div class="frm-grp">
+                        <label for="from">from:</label>
+                        <input
+                          type="date"
+                          id="from"
+                          placeholder="From"
+                          class="form-control"
+                          name="from-date"
+                        />
+                      </div>
+                      <div class="frm-grp">
+                        <label for="to">to:</label>
+                        <input
+                          type="date"
+                          id="to"
+                          placeholder="to"
+                          class="form-control"
+                          name="to-date"
+                        />
+                      </div>
+                      <div class="frm-grp">
+                        <label for="departure">departure:</label>
+                        <input
+                          type="date"
+                          id="departure"
+                          placeholder="to"
+                          class="form-control"
+                          name="departure-date"
+                        />
+                      </div>
+                      <div class="frm-grp">
+                        <label for="return">return:</label>
+                        <input
+                          type="date"
+                          id="return"
+                          placeholder="to"
+                          class="form-control"
+                          name="return-date"
+                        />
+                      </div>
+                    </div>
+                  </form>
+                </section>
+
+                <section id="content5" class="tab-content">
+                  <h3>Holiday Package Bookings</h3>
+                  <form action="#" class="booking-frm">
+                    <div class="frm-row">
+                      <div class="frm-grp">
+                        <label for="from">from:</label>
+                        <input
+                          type="date"
+                          id="from"
+                          placeholder="From"
+                          class="form-control"
+                          name="from-date"
+                        />
+                      </div>
+                      <div class="frm-grp">
+                        <label for="to">to:</label>
+                        <input
+                          type="date"
+                          id="to"
+                          placeholder="to"
+                          class="form-control"
+                          name="to-date"
+                        />
+                      </div>
+                      <div class="frm-grp">
+                        <label for="departure">departure:</label>
+                        <input
+                          type="date"
+                          id="departure"
+                          placeholder="to"
+                          class="form-control"
+                          name="departure-date"
+                        />
+                      </div>
+                      <div class="frm-grp">
+                        <label for="return">return:</label>
+                        <input
+                          type="date"
+                          id="return"
+                          placeholder="to"
+                          class="form-control"
+                          name="return-date"
+                        />
+                      </div>
+                    </div>
+                    <div class="frm-row">
+                      <div class="frm-grp">
+                        <label for="adult-member-select">Select ADULTS:</label>
+                        <select
+                          name="adult-member-select"
+                          id="adult-member-select"
+                        >
+                          <option selected value="0">ADULTS</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">4</option>
+                          <option value="4">6</option>
+                          <option value="5">8</option>
+                          <option value="6">10</option>
+                        </select>
+                      </div>
+                      <div class="frm-grp">
+                        <label for="children-member-select"
+                          >select CHILDREN:</label
+                        >
+                        <select
+                          name="children-member-select"
+                          id="children-member-select"
+                        >
+                          <option selected value="0">CHILDREN</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">4</option>
+                          <option value="4">6</option>
+                          <option value="5">8</option>
+                          <option value="6">10</option>
+                        </select>
+                      </div>
+                      <div class="frm-grp">
+                        <label for="room-member-select">select room:</label>
+                        <select
+                          name="room-member-select"
+                          id="room-member-select"
+                        >
+                          <option selected value="0">ROOM</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">4</option>
+                          <option value="4">6</option>
+                          <option value="5">8</option>
+                          <option value="6">10</option>
+                        </select>
+                      </div>
+                      <div class="frm-grp">
+                        <label for="country-member-select"
+                          >select Country:</label
+                        >
+                        <select
+                          name="country-member-select"
+                          id="country-member-select"
+                        >
+                          <option selected value="0">Country</option>
+                          <option value="1">Canada</option>
+                          <option value="2">India</option>
+                        </select>
+                      </div>
+                    </div>
+                  </form>
+                </section>
               </div>
             </div>
-          </div>
-          <div class="offers-card-row">
-            <div class="offers-card">
-              <img
-                src="./assets/images/destination/cedric-letsch.jpg"
-                class="offers-img"
-                alt="Cedric Letsch"
-              />
-              <div class="right-block">
-                <h2>holidays</h2>
-                <h3>Flat X5% OFF* on Holiday Packages</h3>
-                <p>
-                  by Air India Express. Enjoy VIP Check-Ins, Priority Bording &
-                  More.
-                </p>
-                <a href="#">Book Now</a>
+          </section>
+          <!-- advertisement -->
+          <section class="advertisement-section">
+            <img src="./assets/images/top-deals.jpg" alt="Top Deals" />
+          </section>
+          <!-- offers section -->
+          <section class="offers-section">
+            <div class="offers-nav-row">
+              <h3>Offers</h3>
+              <ul class="offers-nav">
+                <li>
+                  <a href="#" class="nav-link active">all offers</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link">flights</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link">hotels</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link">holidays</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link">trains</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link">cabs</a>
+                </li>
+              </ul>
+              <div class="views-row">
+                <a href="offers.html" class="view-link">VIEW ALL</a>
+                <div class="showall-icons">
+                  <a href="#"
+                    ><img
+                      src="assets/images/previous.png"
+                      class="icons"
+                      alt="Previous Offer Icons"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="assets/images/next.png"
+                      class="icons"
+                      alt="Next Offer Icons"
+                  /></a>
+                </div>
               </div>
             </div>
-            <div class="offers-card">
-              <img
-                src="./assets/images/destination/cedric-letsch.jpg"
-                class="offers-img"
-                alt="Cedric Letsch"
-              />
-              <div class="right-block">
-                <h2>holidays</h2>
-                <h3>Flat X5% OFF* on Holiday Packages</h3>
-                <p>
-                  by Air India Express. Enjoy VIP Check-Ins, Priority Bording &
-                  More.
-                </p>
-                <a href="#">Book Now</a>
+            <div class="offers-card-row">
+              <div class="offers-card">
+                <img
+                  src="./assets/images/destination/cedric-letsch.jpg"
+                  class="offers-img"
+                  alt="Cedric Letsch"
+                />
+                <div class="right-block">
+                  <h2>holidays</h2>
+                  <h3>Flat X5% OFF* on Holiday Packages</h3>
+                  <p>
+                    by Air India Express. Enjoy VIP Check-Ins, Priority Bording
+                    & More.
+                  </p>
+                  <a href="#">Book Now</a>
+                </div>
+              </div>
+              <div class="offers-card">
+                <img
+                  src="./assets/images/destination/jairo-gonzalez.jpg"
+                  class="offers-img"
+                  alt="jairo-gonzalez"
+                />
+                <div class="right-block">
+                  <h2>holidays</h2>
+                  <h3>Flat X5% OFF* on Holiday Packages</h3>
+                  <p>
+                    by Air India Express. Enjoy VIP Check-Ins, Priority Bording
+                    & More.
+                  </p>
+                  <a href="#">Book Now</a>
+                </div>
+              </div>
+              <div class="offers-card">
+                <img
+                  src="./assets/images/destination/lawless-capture.jpg"
+                  class="offers-img"
+                  alt="lawless-capture"
+                />
+                <div class="right-block">
+                  <h2>holidays</h2>
+                  <h3>Flat X5% OFF* on Holiday Packages</h3>
+                  <p>
+                    by Air India Express. Enjoy VIP Check-Ins, Priority Bording
+                    & More.
+                  </p>
+                  <a href="#">Book Now</a>
+                </div>
+              </div>
+              <div class="offers-card">
+                <img
+                  src="./assets/images/destination/ouael-ben-salah.jpg"
+                  class="offers-img"
+                  alt="Cedric Letsch"
+                />
+                <div class="right-block">
+                  <h2>holidays</h2>
+                  <h3>Flat X5% OFF* on Holiday Packages</h3>
+                  <p>
+                    by Air India Express. Enjoy VIP Check-Ins, Priority Bording
+                    & More.
+                  </p>
+                  <a href="#">Book Now</a>
+                </div>
+              </div>
+              <div class="offers-card">
+                <img
+                  src="./assets/images/destination/ouael-ben.jpg"
+                  class="offers-img"
+                  alt="lawless-capture"
+                />
+                <div class="right-block">
+                  <h2>holidays</h2>
+                  <h3>Flat X5% OFF* on Holiday Packages</h3>
+                  <p>
+                    by Air India Express. Enjoy VIP Check-Ins, Priority Bording
+                    & More.
+                  </p>
+                  <a href="#">Book Now</a>
+                </div>
+              </div>
+              <div class="offers-card">
+                <img
+                  src="./assets/images/destination/tudor-baciu.jpg"
+                  class="offers-img"
+                  alt="Cedric Letsch"
+                />
+                <div class="right-block">
+                  <h2>holidays</h2>
+                  <h3>Flat X5% OFF* on Holiday Packages</h3>
+                  <p>
+                    by Air India Express. Enjoy VIP Check-Ins, Priority Bording
+                    & More.
+                  </p>
+                  <a href="#">Book Now</a>
+                </div>
               </div>
             </div>
-            <div class="offers-card">
-              <img
-                src="./assets/images/destination/cedric-letsch.jpg"
-                class="offers-img"
-                alt="Cedric Letsch"
-              />
-              <div class="right-block">
-                <h2>holidays</h2>
-                <h3>Flat X5% OFF* on Holiday Packages</h3>
-                <p>
-                  by Air India Express. Enjoy VIP Check-Ins, Priority Bording &
-                  More.
-                </p>
-                <a href="#">Book Now</a>
+          </section>
+          <!-- advertisement -->
+          <section class="advertisement-section">
+            <img src="./assets/images/top-deals.jpg" alt="Top Deals" />
+          </section>
+          <!-- locations -->
+          <section class="locations-section offers-section">
+            <div class="offers-nav-row">
+              <h3>Locations</h3>
+              <ul class="offers-nav">
+                <li>
+                  <a href="#" class="nav-link active">Ottawa</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link">Toronto</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link">Montreal</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link">Nigra Falls</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link">Calgary</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link">Vancouver</a>
+                </li>
+              </ul>
+              <div class="views-row">
+                <a href="offers.html" class="view-link">VIEW ALL</a>
+                <div class="showall-icons">
+                  <a href="#"
+                    ><img
+                      src="assets/images/previous.png"
+                      class="icons"
+                      alt="Previous Offer Icons"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="assets/images/next.png"
+                      class="icons"
+                      alt="Next Offer Icons"
+                  /></a>
+                </div>
               </div>
             </div>
-            <div class="offers-card">
-              <img
-                src="./assets/images/destination/cedric-letsch.jpg"
-                class="offers-img"
-                alt="Cedric Letsch"
-              />
-              <div class="right-block">
-                <h2>holidays</h2>
-                <h3>Flat X5% OFF* on Holiday Packages</h3>
-                <p>
-                  by Air India Express. Enjoy VIP Check-Ins, Priority Bording &
-                  More.
-                </p>
-                <a href="#">Book Now</a>
+            <div class="gallery">
+              <div class="gallery__item gallery__item--hor">
+                <img
+                  src="assets/images/destination/cedric-letsch.jpg"
+                  alt="cedric-letsch"
+                />
+              </div>
+              <div class="gallery__item">
+                <img src="assets/images/destination/futc.jpg" alt="futc" />
+              </div>
+              <div class="gallery__item">
+                <img src="./assets/images/destination/eugene-chan.jpg" alt="" />
+              </div>
+              <div class="gallery__item gallery__item--vert">
+                <img
+                  src="./assets/images/destination/ouael-ben-salah.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="gallery__item gallery__item--lg">
+                <img
+                  src="./assets/images/destination/silas-baisch.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="gallery__item">
+                <img
+                  src="./assets/images/destination/raimond-klavins.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="gallery__item">
+                <img
+                  src="./assets/images/destination/lorenzo-moschi.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="gallery__item">
+                <img
+                  src="./assets/images/destination/lawless-capture.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="gallery__item">
+                <img
+                  src="./assets/images/destination/raimond-klavins.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="gallery__item">
+                <img src="assets/images/destination/futc.jpg" alt="futc" />
+              </div>
+              <div class="gallery__item">
+                <img src="./assets/images/destination/eugene-chan.jpg" alt="" />
+              </div>
+              <div class="gallery__item">
+                <img
+                  src="./assets/images/destination/lawless-capture.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="gallery__item">
+                <img src="./assets/images/destination/eugene-chan.jpg" alt="" />
               </div>
             </div>
-          </div>
-          
-        </section>
+          </section>
+          <!-- advertisement -->
+          <section class="advertisement-section">
+            <img src="./assets/images/top-deals.jpg" alt="Top Deals" />
+          </section>
+        </div>
       </main>
+      <!-- footer -->
       <footer class="footer">
         <div class="footer-top-row">
           <div class="footer-block">
