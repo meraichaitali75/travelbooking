@@ -692,7 +692,7 @@ aboutus-content .content {
   align-items: center;
   text-align: center;
   color: white;
-  animation: fade-in 1s ease-in-out;
+  animation: fade-in 3s ease-in-out;
   /* margin: 25px; */
   margin-bottom: 50px;
 }
