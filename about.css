@@ -13,26 +13,26 @@ p{
     font-size: 20px;
     font-weight: bold;
 }
-.section1{
+.aboutus-content .section1{
     display: flex;
     align-items: center;
     padding: 50px;
 }
-.content{
+aboutus-content .content{
     flex: 1;
     margin-right: 50px;
 }
-.image{
+.aboutus-content .image{
     flex: 1;
 }
-.image img{
+.aboutus-content .image img{
     max-width: 50%;
     height: 50%;
 }
-img{
+.aboutus-content img{
     border-radius: 20px;
 }
-.btn{
+.aboutus-content .btn{
     display: inline-block;
     background-color: black;
     color: white;
@@ -40,30 +40,30 @@ img{
     padding: 10px 20px;
     border-radius: 5px;
 }
-.btn:hover{
+.aboutus-content .btn:hover{
     background-color:blue;
 }
-.section2{
+.aboutus-content .section2{
     background-color: aliceblue;
     padding: 50px;
 }
 
-.section2 h2{
+.aboutus-content .section2 h2{
     text-align: center;
     margin-bottom: 30px;
     text-decoration: underline;
     text-transform: uppercase;
 }
 
-.team{
+.aboutus-content .team{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
 }
-.tmember{
+.aboutus-content .tmember{
     text-align: center;
 }
-.tmember img{
+.aboutus-content .tmember img{
     max-width: 100%;
     height: auto;
 }

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-    <link rel="stylesheet" href="about.css">
-</head>
-<body>
-    <header class="header">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div id="pagecontainer">
+      <!-- header -->
+      <header class="header">
         <input type="checkbox" id="check" />
         <label for="check" class="menu">
           <svg
@@ -34,7 +36,7 @@
         <div class="nav-menu">
           <ul class="nav">
             <li>
-              <a href="index.html" class="nav-link ">home</a>
+              <a href="index.html" class="nav-link">home</a>
             </li>
             <li>
               <a href="aboutus.html" class="nav-link active">about Us</a>
@@ -51,44 +53,56 @@
           </ul>
         </div>
       </header>
-    <main>
+      <!-- main -->
+      <main class="aboutus-content">
         <section class="section1">
-            <div class="content">
-                <h1>About Us</h1>
-                <p>Our travel website is your one-stop-shop for all your travel needs. We offer a wide range of services, including flight and hotel bookings, car rentals, vacation packages, and travel insurance. Our team of experienced travel agents is dedicated to providing you with personalized service and expert advice to help you plan your dream vacation.</p>
-                <a href="" class="btn"> Learn More</a>
-            </div>
+          <div class="content">
+            <h1>About Us</h1>
+            <p>
+              Our travel website is your one-stop-shop for all your travel
+              needs. We offer a wide range of services, including flight and
+              hotel bookings, car rentals, vacation packages, and travel
+              insurance. Our team of experienced travel agents is dedicated to
+              providing you with personalized service and expert advice to help
+              you plan your dream vacation.
+            </p>
+            <a href="" class="btn"> Learn More</a>
+          </div>
 
-            <div class="image">
-                <img src="image/img1.jpg" alt="About Us">
-            </div>
+          <div class="image">
+            <img
+              src="./assets/images/aboutus/img1.jpg
+            "
+              alt="About Us"
+            />
+          </div>
         </section>
-
         <section class="section2">
-            <h2>Travel Guide</h2>
-            <div class="team">
-                <div class="tmember">
-                    <img src="image/team3.jpg" alt="">
-                    <h3>Komal Ahir</h3>
-                    <p>Bussiness</p>
-                    <a href="" class="btn">Contact</a>
-                </div>
-                <div  class="tmember">
-                    <img src="image/team2.jpg" alt="">
-                    <h3>Nik</h3>
-                    <p>Booker</p>
-                    <a href="" class="btn">Contact</a>
-                </div>
-                <div  class="tmember">
-                    <img src="image/team1.jpg" alt="">
-                    <h3>John</h3>
-                    <p>Guider</p>
-                    <a href="" class="btn">Contact</a>
-                </div>
+          <h2>Travel Guide</h2>
+          <div class="team">
+            <div class="tmember">
+              <img src="./assets/images/aboutus/team3.jpg" alt="" />
+              <h3>Komal Ahir</h3>
+              <p>Bussiness</p>
+              <a href="" class="btn">Contact</a>
             </div>
+            <div class="tmember">
+              <img src="./assets/images/aboutus/team2.jpg" alt="" />
+              <h3>Nik</h3>
+              <p>Booker</p>
+              <a href="" class="btn">Contact</a>
+            </div>
+            <div class="tmember">
+              <img src="./assets/images/aboutus/team1.jpg" alt="" />
+              <h3>John</h3>
+              <p>Guider</p>
+              <a href="" class="btn">Contact</a>
+            </div>
+          </div>
         </section>
-    </main>
-    <footer class="footer">
+      </main>
+      <!-- footer -->
+      <footer class="footer">
         <div class="footer-top-row">
           <div class="footer-block">
             <h3>Our Story</h3>
@@ -194,5 +208,6 @@
           >
         </div>
       </footer>
-</body>
+    </div>
+  </body>
 </html>

@@ -184,7 +184,7 @@ header .menu {
 }
 /* *********** ends: header css*********** */
 
-/* ***********locations css*************** */
+/* ***********home locations css*************** */
 .locations-section .gallery {
   display: grid;
   grid-gap: 10px;
@@ -223,7 +223,7 @@ header .menu {
   grid-column: span 2;
   grid-row: span 2;
 }
-/* ***********ends: locations css*************** */
+/* ***********ends: home locations css*************** */
 /* ***********advertisements css*************** */
 .advertisement-section {
   background-color: var(--secondary);
@@ -365,7 +365,7 @@ footer .footer-rights-row .contact-travel {
 }
 /* *********** ends: footer css*********** */
 
-/* *********** booking css*********** */
+/* *********** home booking css*********** */
 .booking-section {
   background-image: url(../images/yomex-owo.jpg);
   background-size: cover;
@@ -494,7 +494,6 @@ footer .footer-rights-row .contact-travel {
   width: 50px;
 }
 
-/*Content Animation*/
 @keyframes fadeInScale {
   0% {
     transform: scale(0.9);
@@ -513,9 +512,9 @@ footer .footer-rights-row .contact-travel {
 .link {
   text-align: center;
 }
-/* *********** ends: booking css*********** */
+/* *********** ends: home booking css*********** */
 
-/* *********** offers css*********** */
+/* *********** home offers css*********** */
 .offers-section {
   display: flex;
   flex-direction: column;
@@ -619,7 +618,65 @@ footer .footer-rights-row .contact-travel {
   border-radius: 0 10px 0 10px;
 }
 
-/* *********** ends: offers css*********** */
+/* *********** ends: home offers css*********** */
+
+/* ***********  about us  css*********** */
+.aboutus-content .section1 {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+aboutus-content .content {
+  flex: 1;
+  margin-right: 50px;
+}
+.aboutus-content .image {
+  flex: 1;
+}
+.aboutus-content .image img {
+  max-width: 50%;
+  height: 50%;
+}
+.aboutus-content img {
+  border-radius: 20px;
+}
+.aboutus-content .btn {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.aboutus-content .btn:hover {
+  background-color: blue;
+}
+.aboutus-content .section2 {
+  background-color: aliceblue;
+  padding: 50px;
+}
+
+.aboutus-content .section2 h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.aboutus-content .team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.aboutus-content .tmember {
+  text-align: center;
+}
+.aboutus-content .tmember img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* *********** ends: about us css*********** */
 
 @media (max-width: 768px) {
   .container {
@@ -806,4 +863,23 @@ footer .footer-rights-row .contact-travel {
     width: 100%;
   }
   /* ***********ends: booking css*************** */
+  /* *********** about css*************** */
+  .aboutus-content .section1 {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .aboutus-content .content {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .aboutus-content .team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* ***********ends: about css*************** */
+}
+
+@media (max-width: 480px) {
+  .aboutus-content .team {
+    grid-template-columns: 1fr;
+  }
 }
