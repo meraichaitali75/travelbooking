@@ -43,6 +43,23 @@ h6 {
 ul {
   list-style: none;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--secondary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray);
+}
 /* ***********ends: common css*********** */
 
 /* ***********main grid system*********** */
@@ -65,7 +82,7 @@ main {
 footer {
   grid-area: footer;
 }
-.container {
+.main-content .container {
   width: 1350px;
   margin: 0 auto;
 }
@@ -424,6 +441,9 @@ footer .footer-rights-row .contact-travel {
   display: flex;
   align-items: center;
 }
+.booking-frm  {
+  position: relative;
+}
 .booking-frm label {
   color: var(--dark);
   text-transform: uppercase;
@@ -480,6 +500,27 @@ footer .footer-rights-row .contact-travel {
   -webkit-animation: fadeInScale 0.7s ease-in-out;
   -moz-animation: fadeInScale 0.7s ease-in-out;
   animation: fadeInScale 0.7s ease-in-out;
+}
+.booking-section .btn-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.booking-section .btn {
+  padding: 20px 70px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: none;
+  border-radius: 0 10px 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: -80px;
+  font-size: 20px;
+}
+
+.booking-section .btn:hover {
+  background-color: #555;
 }
 .booking-section .tab_container .tab-content h3 {
   text-align: center;
@@ -642,11 +683,12 @@ aboutus-content .content {
 }
 .aboutus-content .btn {
   display: inline-block;
-  background-color: black;
+  background-color: var(--primary);
   color: white;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
+  margin-top: 20px;
 }
 .aboutus-content .btn:hover {
   background-color: blue;
@@ -815,6 +857,12 @@ aboutus-content .content {
 /* *********** ends: offers css*********** */
 
 /* *********** loactions css*************** */
+.locations-content {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .locations-content .hero {
   position: relative;
   overflow: hidden;
@@ -917,7 +965,7 @@ aboutus-content .content {
 .locations-content .travel-content button {
   padding: 0.5rem 1rem;
   background-color: #333;
-  color: #fff;
+  color: var(--secondary);
   border: none;
   border-radius: 3px;
   cursor: pointer;
@@ -981,9 +1029,14 @@ aboutus-content .content {
 }
 
 .locations-content .top-visited-Country {
-  width: auto;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
+}
+
+.locations-content th,
+.locations-content td {
+  border-right: 1px solid var(--primary);
 }
 
 .locations-content .top-visited-Country-heading {
@@ -991,27 +1044,119 @@ aboutus-content .content {
   margin-bottom: 20px;
 }
 
+.locations-content .top-visited-Country-table {
+  overflow-x: auto;
+}
 .locations-content .top-visited-Country-table table {
   width: 100%;
   border-collapse: collapse;
+  border: 1px solid var(--gray);
 }
-
-.locations-content top-visited-Country-table th {
-  background-color: #f2f2f2;
-  padding: 10px;
+.locations-content th {
   text-align: left;
+  background: var(--primary);
+  padding: 15px;
+  height: 20px;
+  color: var(--secondary);
+  border-bottom: 1px solid #ddd;
 }
 
 .locations-content .top-visited-Country-table td {
   padding: 10px;
+  color: var(--dark);
   border-bottom: 1px solid #ddd;
 }
 
 .locations-content .top-visited-Country-table tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: #adc0de;
 }
 
 /* *********** ends: loactions css*************** */
+
+/* ***********  contact css*************** */
+.contact-content .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.contact-content .cinfo {
+  flex: 1 1 300px;
+  background-color: var(--secondary);
+  border: 1px solid var(--gray);
+  padding: 40px;
+  text-align: center;
+  /* border-radius: 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-content p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.contact-content .cinfo h1 {
+  margin-top: 0;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px wheat;
+}
+.contact-content .cdetails {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  text-align: left;
+}
+.contact-content .details {
+  display: flex;
+  align-items: center;
+}
+
+.contact-content .cform {
+  flex: 1 1 400px;
+  padding: 0 40px;
+}
+.contact-content .cform h1 {
+  padding-bottom: 20px;
+}
+.contact-content .f1 {
+  margin-bottom: 20px;
+}
+.contact-content f1 label {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+}
+.contact-content .f1 input,
+.contact-content .f1 textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 10px;
+  outline: 0;
+  border: 1px solid var(--grayShade1);
+}
+
+.contact-content .f1 textarea {
+  height: 150px;
+}
+
+.contact-content button[type="submit"] {
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-content button[type="submit"]:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+/* *********** ends: contact css*************** */
 
 @media (max-width: 1200px) {
   .top8-location-card {
@@ -1026,8 +1171,12 @@ aboutus-content .content {
   }
 }
 @media (max-width: 768px) {
-  main-content .container {
+  .main-content .container {
     width: 100%;
+  }
+  .booking-section .btn
+  {
+    position: inherit;
   }
   /* ***********header css*************** */
   header .nav-menu {
@@ -1190,6 +1339,14 @@ aboutus-content .content {
   .offers-section .offers-card-row {
     margin: 20px 0;
   }
+  .offer-content .offer-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact-content .cinfo {
+    flex: 1 1 auto;
+    padding: 10px;
+  }
   /* ***********ends: offers css*************** */
 
   /* ***********booking css*************** */
@@ -1222,12 +1379,17 @@ aboutus-content .content {
   .aboutus-content .team {
     grid-template-columns: repeat(2, 1fr);
   }
+  .aboutus-content .image img {
+    max-width: 100%;
+  }
   /* ***********ends: about css*************** */
 
   /* *********** loactions css*************** */
-
+  .locations-content {
+    flex-direction: column;
+  }
   .locations-content .location {
-    width: calc(33.33% - 1rem);
+    width: 100%;
   }
   .locations-content .travel-info {
     flex-direction: row;
@@ -1236,6 +1398,16 @@ aboutus-content .content {
     padding: 1rem 2rem;
   }
   /* ***********ends: location css*************** */
+
+  .contact-content .container {
+    flex-direction: column;
+  }
+  .contact-content .cinfor,
+  .contact-content .cform {
+    flex-basis: auto;
+    margin-top: 20px;
+    padding: 0;
+  }
 }
 
 @media (max-width: 480px) {
